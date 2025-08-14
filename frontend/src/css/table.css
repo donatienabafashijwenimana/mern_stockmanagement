@@ -1,0 +1,37 @@
+table{
+    min-width: 80%;
+    max-width: 100%;
+    border-collapse: collapse;
+    
+}
+thead{
+    background-color: blue;
+    height: 2.5pc;
+    color: white;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+td{
+    height: 2.5pc;
+    padding: 0 4px;
+    font-size: 1pc;
+}
+.action{
+    width: 8pc;
+
+}
+.action-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+}
+.action-button{
+    width: 98%;
+    height: 80%;
+    border: 0.5px solid black;
+    margin: 3% 4px;
+    outline: none;
+    border-radius: 4px;
+    text-transform: capitalize;
+}

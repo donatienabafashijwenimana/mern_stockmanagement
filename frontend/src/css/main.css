@@ -1,0 +1,19 @@
+body{
+    overflow: hidden;
+}
+.main-container{
+    display:flex;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.main-right-side{
+    width: 15pc;
+    height: 40pc;
+    background-color: rgb(61, 100, 134);
+}
+.main-left-side{
+    width: 70pc;
+}
+

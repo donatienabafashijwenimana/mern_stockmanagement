@@ -1,0 +1,62 @@
+.form{
+    width:40%;
+    height: auto;
+    max-height: 35pc;
+    background-color: white;
+    overflow: auto;
+    
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.form form label{
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 0.5pc;
+
+}
+.form-title{
+    color: blue;
+    font-size: 32px;
+    margin-bottom: 1pc;
+    display: flex;
+    justify-content: space-between;
+}
+.form form input,select{
+    width: 95%;
+    height: 1.8pc;
+    outline: none; 
+    border: solid black 1px;
+    border-radius: 5px;
+}
+.form form textarea{
+    max-height: 4pc;
+    max-width: 95%;
+    min-height: 2pc;
+    min-width: 95%;
+}
+.save-button{
+    background-color: blue;
+    margin-top: 1pc;
+    height: 2pc;
+    border:none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+.save-button:hover{
+    background-color: rgb(10, 10, 214);
+}
+.close-button{
+    width: 1.5pc;
+    height: 1.5pc;
+    color: red;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 1pc;
+
+}
