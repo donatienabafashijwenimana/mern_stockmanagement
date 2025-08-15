@@ -31,6 +31,7 @@
     outline: none; 
     border: solid black 1px;
     border-radius: 5px;
+    padding: 0 5px;
 }
 .form form textarea{
     max-height: 4pc;
@@ -51,12 +52,12 @@
 .save-button:hover{
     background-color: rgb(10, 10, 214);
 }
-.close-button{
+.close-button,.bi{
     width: 1.5pc;
     height: 1.5pc;
     color: red;
     cursor: pointer;
-    border: 1px solid black;
+    /* border: 1px solid black; */ 
     font-size: 1pc;
 
 }

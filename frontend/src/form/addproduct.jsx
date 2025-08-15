@@ -10,7 +10,7 @@ function Addcategories() {
         <form action="">
             <div className="form-title">
                 add product
-                <button onClick={()=>setform(null)}>x</button>
+                <i onClick={()=>setform(null)} className='bi bi-x-circle'></i>
             </div>
             <label htmlFor="" className="fieldname">product name</label>
             <input type="text" name="" id="" />

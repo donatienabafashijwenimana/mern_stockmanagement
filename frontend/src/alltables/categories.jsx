@@ -2,15 +2,17 @@ import React from 'react'
 
 function Categories() {
     require('../css/table.css')
+
+    const th_ =['#','category','description','status','action']
   return (
     <div>
       <table border="1">
         <thead>
-            <th>#</th>
-            <th>category</th>
-            <th>description</th>
-            <th>status</th>
-            <th action>action</th>
+          {th_.map((_th_,i) => (
+            <th className='action'>{_th_}</th>
+          
+          ))}
+            
         </thead>
         <tr>
             <td>1</td>

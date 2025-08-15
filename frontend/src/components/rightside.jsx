@@ -5,6 +5,7 @@ function Rightside() {
     require('../css/right-side.css')
 
     const {setpage} = switchpage()
+    
   return (
     <div className='right-side-container'>
      <div className="title">sms</div> 

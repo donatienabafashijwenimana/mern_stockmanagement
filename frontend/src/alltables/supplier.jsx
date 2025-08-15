@@ -1,26 +1,26 @@
 import React from 'react'
 
-function Product() {
+function Supplier() {
     require('../css/table.css')
 
-    const th_ = ['#','product','category','unit measure','cost price','selling price','status','action']
+    const th_ =['#','supplier','phone','email','address','product can supply','action']
   return (
     <div>
       <table border="1">
         <thead>
-          {th_.map((_th_,i)=>(
+          {th_.map((_th_,i) => (
             <th className='action'>{_th_}</th>
+          
           ))}
             
         </thead>
         <tr>
             <td>1</td>
-            <td>rice</td>
-            <td>food</td>
-            <td>kg</td>
-            <td>1500</td>
-            <td>2000</td>
-            <td>active</td>
+            <td>john smith</td>
+            <td>0789581223</td>
+            <td>josimith@gmail.com</td>
+            <td>kigali-rwanda</td>
+            <td>irish potato,rice,beans</td>
             <td className='action'>
                 <select name="action" className="action-button">
                     <option value="" disabled selected>choose action</option>
@@ -34,4 +34,4 @@ function Product() {
   )
 }
 
-export default Product
+export default Supplier

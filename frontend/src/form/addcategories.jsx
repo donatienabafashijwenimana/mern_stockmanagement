@@ -1,5 +1,7 @@
 import React from 'react'
 import { switchpage } from '../store/pagestore'
+
+import 'bootstrap-icons/font/bootstrap-icons.css';
 function Addcategories() {
     require('../css/form.css')
 
@@ -10,7 +12,7 @@ function Addcategories() {
         <form action="">
             <div className="form-title">
                 add categories 
-                <button className='close-button' onClick={()=>setform(null)}>x</button>
+                <i onClick={()=>setform(null)} className='bi bi-x-circle'></i>
             </div>
             <label htmlFor="" className="fieldname">category name</label>
             <input type="text" name="" id="" />
