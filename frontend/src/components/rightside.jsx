@@ -18,8 +18,8 @@ function Rightside() {
         <label  onClick={()=>setpage('customer')}>Customer</label>
         <label  onClick={()=>setpage('purchasing order')}>Purchasing order</label>
         <label  onClick={()=>setpage('sales order')}>Sales order</label>
-        <label onClick={()=>setpage('stock in')}>Stock in</label>
-        <label onClick={()=>setpage('stock out')}>Stock out</label>
+        <label onClick={()=>setpage('stock in')}>Stock in detail</label>
+        <label onClick={()=>setpage('stock out')}>Stock out detail</label>
         <label onClick={()=>setpage('current stock')}>Current stock</label>
      </div>
     </div>
