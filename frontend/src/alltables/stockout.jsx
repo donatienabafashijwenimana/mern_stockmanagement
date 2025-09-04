@@ -1,15 +1,14 @@
 
 import React, { useEffect } from 'react'
-import { switchpage } from '../store/pagestore'
+// import { switchpage } from '../store/pagestore'
 import { stockoutstore } from '../store/stockoutstore'
 
 function Stockout() {
     require('../css/table.css')
 
-    const th_ =['#','date','product','customer','quantity','total price']
-  
+    const th_ =['#','date','product','quantity','customer','total price']
     const {stockout_list,setstockoutlist} = stockoutstore()
-    const {setform}= switchpage()
+    // const {setform}= switchpage()
 
     useEffect(()=>{
       setstockoutlist()
@@ -35,10 +34,10 @@ function Stockout() {
             
             <tr key={i}>
                 <td>{i+1}</td>
-                <td>{item.product.product_name}</td>
+                <td>{formatDate(item.date)}</td>
+                <td>{item.product && item.product.product_name}</td>
                 <td>{item.quantity}</td>
                 <td>{item.customer.customer_name}</td>
-                <td>{formatDate(item.date)}</td>
                 <td>{item.unit_price}</td>
             </tr>
           ))}

@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { switchpage } from '../store/pagestore'
-import { customerstore } from '../store/customer'
-import { productstore } from '../store/productstore'
 import {stockoutstore} from '../store/stockoutstore'
 
 function Addstockout() {
     require('../css/form.css')
 
-    const {setform}= switchpage()
-    const {customer_list,setcustomerlist} = customerstore()
-    const {product_list,setproductlist} = productstore()
+    const {setform,form_data}= switchpage()
     const {addstockout}= stockoutstore()
 
     const formmatdateforinput = (datestring)=>{
@@ -17,20 +13,14 @@ function Addstockout() {
         const d = new Date(datestring);
         return d.toISOString().split("T")[0]
     }
-    
-    const {form_data}= switchpage()
 
     const [data,setdata]=useState({
         product:form_data.product && form_data.product._id,
         quantity:form_data.quantity,
-        supplier:form_data.customer && form_data.customer._id,
+        customer:form_data.customer && form_data.customer._id,
         date:form_data && formmatdateforinput(form_data.date),
         price:form_data.price
     })
-    useEffect(()=>{
-        setproductlist();
-        setcustomerlist();
-    },[])
     
     const submit_form =()=>{
         if(!data.product) return alert('⚠️invalid product')
@@ -39,8 +29,8 @@ function Addstockout() {
         if(!data.date) return alert('⚠️invalid date')
         if(!data.price) return alert('⚠️invalid price')
             
-            addstockout(data.product,data.quantity,data.supplier,data.date,data.price,form_data._id);
-            setform(null)
+        addstockout(data.product,data.quantity,data.customer,data.date,data.price,form_data._id);
+        setform(null)
         // }
     }
   return (

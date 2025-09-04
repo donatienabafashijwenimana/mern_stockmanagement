@@ -36,10 +36,11 @@ function Stockin() {
             
             <tr key={i}>
                 <td>{i+1}</td>
-                <td>{item.product.product_name}</td>
+                {console.log(item)}
+                <td>{formatDate(item.date)}</td>
+                <td>{item.product && item.product.product_name}</td>
                 <td>{item.quantity}</td>
                 <td>{item.supplier.supplier_name}</td>
-                <td>{formatDate(item.date)}</td>
                 <td>{item.unit_price}</td>
             </tr>
           ))}

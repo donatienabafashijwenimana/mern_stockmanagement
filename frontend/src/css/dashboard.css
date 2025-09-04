@@ -1,0 +1,48 @@
+.dashboard-container{
+    display:flex;
+    flex-direction: column;
+    gap:1pc;
+    overflow-y: auto;
+    max-height: 30pc;
+    text-transform: capitalize;
+}
+.dashboard-row{
+    display: flex;
+    justify-content: space-around;
+}
+.dashboard-card{
+    width: 46%;
+    height: 22pc;
+    /* border: 1px solid blue; */
+    box-shadow: 0 0 4px blue;
+    border-radius: 5px;
+    padding: 1pc;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+.dashboard-card span{
+    color: blue;
+    font-size: 20px;
+}
+.dashboard-card1{
+    height: 3pc;
+    width: 19%;
+    border: none;
+    background-color: rgb(201, 240, 201);
+    border-radius: 10px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.3pc;
+}
+
+
+
+
+.chart-container {
+  flex: 2; /* take remaining height */
+}

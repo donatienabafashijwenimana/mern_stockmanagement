@@ -50,7 +50,7 @@ function Porder() {
             
             <tr key={i}>
                 <td>{i+1}</td>
-                <td>{item.product.product_name}</td>
+                <td>{item.product && item.product.product_name}</td>
                 <td>{item.quantity}</td>
                 <td>{item.supplier.supplier_name}</td>
                 <td>{item.warehouse.warehouse_name}</td>
@@ -69,6 +69,7 @@ function Porder() {
                         <option value="update">update</option>
                         <option value="delete">delete</option>
                         <option value="received">received</option>
+                        <option value="rejected">rejected</option>
                     </select>
                 </td>
             </tr>

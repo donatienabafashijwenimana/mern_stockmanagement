@@ -28,5 +28,5 @@ export const supplierstore =create((set,get)=>({
         if(res.data.message) return alert(res.data.message)
         else return alert('error accured')
 
-    }
+    }   
 }))

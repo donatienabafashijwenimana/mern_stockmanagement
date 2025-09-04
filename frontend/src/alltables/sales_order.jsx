@@ -52,7 +52,7 @@ function Sorder() {
             
             <tr key={i}>
                 <td>{i+1}</td>
-                <td>{item.product.product_name}</td>
+                <td>{item.product && item.product.product_name}</td>
                 <td>{item.quantity}</td>
                 <td>{item.customer.customer_name}</td>
                 <td>{item.warehouse.warehouse_name}</td>
@@ -71,6 +71,7 @@ function Sorder() {
                         <option value="update">update</option>
                         <option value="delete">delete</option>
                         <option value="delivered">delivered</option>
+                        <option value="reject">reject</option>
                     </select>
                 </td>
             </tr>

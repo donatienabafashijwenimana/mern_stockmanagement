@@ -21,6 +21,7 @@ import Orderpurchase from '../form/order_purchase'
 import Salesorder from '../form/addsales_order'
 import Addstockout from '../form/addstockout'
 import Stockout from '../alltables/stockout'
+import Dashboard from './dashboard'
 
 function Leftside() {
     require('../css/left-side.css')
@@ -45,6 +46,7 @@ function Leftside() {
             {page=== 'sales order' && <Sorder/>}
             {page=== 'stock in' && <Stockin/>}
             {page=== 'stock out' && <Stockout/>}
+            {page=== 'dashboard' && <Dashboard/>}
 
         </div>
         {form_ &&
